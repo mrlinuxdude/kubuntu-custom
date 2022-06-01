@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+# ZeroTier
+echo\
+    'deb http://download.zerotier.com/debian/buster buster main'|\
+    tee\
+    /etc/apt/sources.list.d/zerotier.list
+wget -qO-\
+    https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/doc/contact%40zerotier.com.gpg|\
+    gpg --dearmor -o\
+    /etc/apt/trusted.gpg.d/zerotier.gpg\
+    >/dev/null
+apt update
+apt install -y zerotier-one
