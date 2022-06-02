@@ -6,4 +6,4 @@ add-apt-repository -y universe
 echo\
     'ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true'|\
     debconf-set-selections
-apt install -y ./kubuntu-restricted-extras
+apt install -y kubuntu-restricted-extras
