@@ -2,7 +2,7 @@
 set -e
 # Session
 echo\
-	'deb [arch=amd64] https://deb.oxen.io jammy main'|\
+	'deb [arch=amd64] https://deb.oxen.io focal main'|\
 	tee\
 	/etc/apt/sources.list.d/oxen.list
 wget -qO-\
