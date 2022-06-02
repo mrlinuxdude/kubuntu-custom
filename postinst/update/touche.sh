@@ -2,6 +2,7 @@
 set -e
 # Touche
 if [ -f /usr/bin/com.github.joseexposito.touche ];then
+	rm -rf touche_*.deb
 	aria2c --console-log-level=error --summary-interval=0\
 		"$(wget -qO-\
 		https://api.github.com/repos/JoseExposito/touche/releases|\

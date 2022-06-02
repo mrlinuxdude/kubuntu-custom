@@ -1,7 +1,10 @@
 #!/bin/bash
 set -e
 # WINE
-sudo rm -rf /opt/wine-tkg
+sudo rm -rf\
+    lutris*\
+    wine*\
+    /opt/wine-tkg
 aria2c --console-log-level=error --summary-interval=0\
     "$(wget -qO-\
     https://api.github.com/repos/Kron4ek/Wine-Builds/releases|\

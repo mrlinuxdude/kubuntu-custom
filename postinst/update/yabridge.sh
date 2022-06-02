@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 # yabridge
+rm -rf yabridge*
 aria2c --console-log-level=error --summary-interval=0\
     "$(wget -qO-\
     https://api.github.com/repos/robbert-vdh/yabridge/releases|\

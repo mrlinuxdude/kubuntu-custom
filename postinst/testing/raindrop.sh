@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 # Raindrop #TODO
+rm -rf raindrop*
 sudo nala install -y npm
 sudo npm install -g nativefier
 aria2c --console-log-level=error --summary-interval=0\

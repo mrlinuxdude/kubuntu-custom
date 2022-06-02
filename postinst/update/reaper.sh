@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 # REAPER
+rm -rf reaper*
 aria2c --console-log-level=error --summary-interval=0\
     "http://reaper.fm/$(wget -qO-\
     http://reaper.fm/download.php|\
