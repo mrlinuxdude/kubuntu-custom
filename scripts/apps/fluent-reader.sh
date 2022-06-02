@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 # Fluent Reader #TODO
-apt install -y ./assets/packages/fluent-reader*.deb
+apt install -y kubuntu-custom/assets/packages/fluent-reader*.deb

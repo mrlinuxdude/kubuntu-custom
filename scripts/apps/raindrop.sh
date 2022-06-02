@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
 # Raindrop #TODO
-apt install -y ./assets/packages/raindrop*.deb
+apt install -y kubuntu-custom/assets/packages/raindrop*.deb
