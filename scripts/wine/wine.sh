@@ -16,10 +16,10 @@ aria2c --console-log-level=error --summary-interval=0\
 tar -xf wine-lutris-ge*.tar.xz
 cp\
     lutris*/lib/wine/i386-windows/winemenubuilder.exe\
-    wine-tkg/opt/wine-tkg/lib/wine/i386-windows/winemenubuilder.exe
+    /opt/wine-tkg/lib/wine/i386-windows/winemenubuilder.exe
 cp\
     lutris*/lib64/wine/x86_64-windows/winemenubuilder.exe\
-    wine-tkg/opt/wine-tkg/lib/wine/x86_64-windows/winemenubuilder.exe
+    /opt/wine-tkg/lib/wine/x86_64-windows/winemenubuilder.exe
 fdfind lutris-ge --exec rm -rf {}
 WINE_GECKO_VER="$(wget -qO-\
     https://dl.winehq.org/wine/wine-gecko/|\

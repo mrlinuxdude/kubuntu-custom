@@ -3,5 +3,5 @@ set -e
 # Bomi
 add-apt-repository -y ppa:nemonein/bomi
 apt install -y\
-    --no-install-recommend\
+    --no-install-recommends\
     bomi
