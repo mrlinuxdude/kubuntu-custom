@@ -1,5 +1,7 @@
 #!/bin/bash
 set -e
+# Telegram
+rm -rf telegram*
 aria2c --console-log-level=error --summary-interval=0\
     -o telegram.tar.xz\
     "$(wget -qO-\

@@ -1,5 +1,7 @@
 #!/bin/bash
 set -e
+# RetroPie
+rm -rf RetroPie-Setup
 sudo nala install -y\
 	dialog\
 	xmlstarlet
