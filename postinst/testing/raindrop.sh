@@ -49,9 +49,7 @@ Exec=/opt/raindrop/Raindrop.io
 Categories=Network
 EOF
 dpkg-deb -b raindrop .
-sudo apt install -y\
-	--reinstall\
-	./raindrop*.deb
+sudo apt install -y ./raindrop*.deb
 cp\
 	raindrop*.deb\
 	kubuntu-custom/assets/packages/
