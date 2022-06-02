@@ -1,9 +1,9 @@
 #!/bin/bash
 set -e
 
-#rm -rf kubuntu-custom
-#git clone -q\
-#    https://git.disroot.org/rauldipeas/kubuntu-custom
+rm -rf kubuntu-custom
+git clone -q\
+    https://git.disroot.org/rauldipeas/kubuntu-custom
 
 # core
 #bash -x kubuntu-custom/scripts/core/liquorix.sh #PPA
