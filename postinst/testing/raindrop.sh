@@ -45,7 +45,7 @@ Terminal=false
 Comment=Access Raindrop on Linux.
 Name=Raindrop
 GenericName=Raindrop desktop app
-Icon=/usr/share/pixmaps/raindrop.png
+Icon=raindrop
 Exec=/opt/raindrop/Raindrop.io
 Categories=Network
 EOF
