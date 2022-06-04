@@ -22,6 +22,7 @@ bash -x kubuntu-custom/scripts/core/nerd-fonts-hack.sh #external-package #makepk
 bash -x kubuntu-custom/scripts/core/firefox.sh #PPA
 bash -x kubuntu-custom/scripts/core/system-monitoring-center.sh #external-package
 bash -x kubuntu-custom/scripts/core/timeshift.sh #stock-apt
+bash -x kubuntu-custom/scripts/core/plasma-hud.sh #external-package #makepkg #binary
 
 # media
 bash -x kubuntu-custom/scripts/media/bomi.sh #PPA
