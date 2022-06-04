@@ -23,4 +23,7 @@ sudo sed -i\
     /etc/buildkite-agent/buildkite-agent.cfg
 sudo systemctl enable buildkite-agent
 sudo systemctl start buildkite-agent
-echo 'buildkite-agent ALL=(ALL) NOPASSWD:ALL'|sudo tee /etc/sudoers.d/10-buildkite>/dev/null
+echo\
+    'buildkite-agent ALL=(ALL) NOPASSWD:ALL'|\
+    sudo tee\
+    /etc/sudoers.d/10-buildkite>/dev/null

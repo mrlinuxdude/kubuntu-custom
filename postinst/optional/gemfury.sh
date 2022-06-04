@@ -8,7 +8,10 @@ echo\
     >/dev/null
 sudo nala update
 sudo nala install -y gemfury
-echo 'export GEMFURY_PUSH_TOKEN='|tee "$HOME"/.bashrc.d/gemfury-push-token.bash>/dev/null
+echo\
+    'export GEMFURY_PUSH_TOKEN='|\
+    tee\
+    "$HOME"/.bashrc.d/gemfury-push-token.bash>/dev/null
 
 # Raul Dipeas APT
 echo\
