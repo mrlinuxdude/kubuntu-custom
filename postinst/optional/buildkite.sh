@@ -14,7 +14,7 @@ sudo apt-key --keyring\
 	2>/dev/null
 sudo nala update
 sudo nala install -y buildkite-agent
-cat <<EOF |tee "$HOME"/.bashrc.d/buildkite-tokens.bash
+cat <<EOF |tee "$HOME"/.bashrc.d/buildkite-tokens.bash>/dev/null
 export BUILDKITE_AGENT_TOKEN=
 export BUILDKITE_API_TOKEN=
 EOF
@@ -23,6 +23,4 @@ sudo sed -i\
     /etc/buildkite-agent/buildkite-agent.cfg
 sudo systemctl enable buildkite-agent
 sudo systemctl start buildkite-agent
-cat <<EOF |sudo tee /etc/sudoers.d/10-buildkite>/dev/null
-buildkite-agent ALL=(ALL) NOPASSWD:ALL
-EOF
+echo 'buildkite-agent ALL=(ALL) NOPASSWD:ALL'|sudo tee /etc/sudoers.d/10-buildkite>/dev/null
