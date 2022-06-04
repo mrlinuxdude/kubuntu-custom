@@ -33,6 +33,7 @@ Section: misc
 Maintainer: Raul Dipeas <rauldipeas@mail.com>
 Architecture: amd64
 Version: 0.1~electron-$ELECTRON_RELEASE
+Installed-Size: $(du -s raindrop|sed 's/ //g'|sed 's/raindrop//g')
 Homepage: https://raindrop.io
 Description: Access Raindrop on Linux.
 EOF
@@ -48,6 +49,13 @@ Icon=/usr/share/pixmaps/raindrop.png
 Exec=/opt/raindrop/Raindrop.io
 Categories=Network
 EOF
+cd raindrop
+find -type f|\
+	sed 's@\./@@g'|\
+	grep -v DEBIAN|\
+	xargs md5sum\
+	>DEBIAN/md5sums
+cd ..
 dpkg-deb -b raindrop .
 sudo apt install -y ./raindrop*.deb
 cp\

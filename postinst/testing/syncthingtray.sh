@@ -38,11 +38,18 @@ Depends: syncthing
 Section: network
 Priority: optional
 Architecture: amd64
+Installed-Size: $(du -s syncthingtray|sed 's/ //g'|sed 's/syncthingtray//g')
 Maintainer: Martchus <Martchus@github.com>
 Description: Tray application and Dolphin/Plasma integration for Syncthing.
 EOF
+cd syncthingtray
+find -type f|\
+	sed 's@\./@@g'|\
+	grep -v DEBIAN|\
+	xargs md5sum\
+	>DEBIAN/md5sums
+cd ..
 dpkg-deb -b syncthingtray .
-sudo apt install -y ./syncthingtray*.deb
 cp\
 	syncthingtray*.deb\
 	kubuntu-custom/assets/packages/
