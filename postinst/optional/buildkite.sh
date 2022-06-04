@@ -14,8 +14,10 @@ sudo apt-key --keyring\
 	2>/dev/null
 sudo nala update
 sudo nala install -y buildkite-agent
-echo\
-    'export BUILDKITE_AGENT_TOKEN='|tee "$HOME"/.bashrc.d/buildkite-agent-token.bash
+cat <<EOF |tee "$HOME"/.bashrc.d/buildkite-tokens.bash
+export BUILDKITE_AGENT_TOKEN=
+export BUILDKITE_API_TOKEN=
+EOF
 sudo sed -i\
     "s/xxx/$BUILDKITE_AGENT_TOKEN/g"\
     /etc/buildkite-agent/buildkite-agent.cfg
