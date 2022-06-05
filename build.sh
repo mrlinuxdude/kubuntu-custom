@@ -65,6 +65,7 @@ bash -x kubuntu-custom/scripts/apps/crow-translate.sh #PPA
 bash -x kubuntu-custom/scripts/apps/fluent-reader.sh #external-package #makepkg #aur
 bash -x kubuntu-custom/scripts/apps/freetube.sh #external-package
 bash -x kubuntu-custom/scripts/apps/iriun.sh #external-package
+bash -x kubuntu-custom/scripts/apps/larkdocs.sh #external-package #makepkg #nativefier
 bash -x kubuntu-custom/scripts/apps/keybase.sh #external-apt
 bash -x kubuntu-custom/scripts/apps/obsidian.sh #external-package
 bash -x kubuntu-custom/scripts/apps/onlyoffice.sh #external-apt
