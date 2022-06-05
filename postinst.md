@@ -21,3 +21,4 @@
 ## Prevenção de captura do foco (nenhum)
 ## Filtro de janelas por área de trabalho na mudança de tarefas(+ícones grandes)
 ## Remover o botão de mostrar a área de trabalho
+## Habilitar o menu de aplicativos no Kwin
