@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 # Plasma HUD
+rm -rf plasma-hud*
 mkdir -p plasma-hud/{DEBIAN,usr/lib/plasma-hud,etc/xdg/autostart}
 git clone -q https://github.com/Zren/plasma-hud plasma-hud-source
 cp -rf plasma-hud-source/usr/lib/plasma-hud/plasma-hud plasma-hud/usr/lib/plasma-hud/
