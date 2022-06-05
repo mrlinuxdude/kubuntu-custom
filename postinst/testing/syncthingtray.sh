@@ -50,6 +50,7 @@ find -type f|\
 	>DEBIAN/md5sums
 cd ..
 dpkg-deb -b syncthingtray .
+sudo apt install ./syncthingtray*.deb
 cp\
 	syncthingtray*.deb\
 	kubuntu-custom/assets/packages/

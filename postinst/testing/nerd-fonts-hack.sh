@@ -5,7 +5,8 @@ rm -rf nerd-fonts-hack*
 git clone -q\
 	https://aur.archlinux.org/nerd-fonts-hack.git
 cd nerd-fonts-hack
-makedeb -i --no-confirm
+makedeb
+sudo apt install ./nerd-fonts-hack*.deb
 cd ..
 cp\
     nerd-fonts-hack/nerd-fonts-hack*.deb\

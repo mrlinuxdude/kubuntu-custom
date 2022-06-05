@@ -8,7 +8,8 @@ cd obs-multi-rtmp
 sudo nala install -y\
 	cmake\
 	libobs-dev
-makedeb -i --no-confirm
+makedeb
+sudo apt install ./obs-multi-rtmp*.deb
 sudo mv\
     /usr/lib/obs-plugins/obs-multi-rtmp.so\
     /usr/lib/x86_64-linux-gnu/obs-plugins/
