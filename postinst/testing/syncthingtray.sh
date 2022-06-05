@@ -43,7 +43,7 @@ Maintainer: Martchus <Martchus@github.com>
 Description: Tray application and Dolphin/Plasma integration for Syncthing.
 EOF
 cd syncthingtray
-find -type f|\
+find . -type f|\
 	sed 's@\./@@g'|\
 	grep -v DEBIAN|\
 	xargs md5sum\

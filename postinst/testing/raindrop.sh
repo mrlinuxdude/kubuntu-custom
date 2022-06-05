@@ -50,7 +50,7 @@ Exec=/opt/raindrop/Raindrop.io
 Categories=Network
 EOF
 cd raindrop
-find -type f|\
+find . -type f|\
 	sed 's@\./@@g'|\
 	grep -v DEBIAN|\
 	xargs md5sum\

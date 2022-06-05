@@ -50,7 +50,7 @@ Exec=/opt/larkdocs/Webapp
 Categories=Office
 EOF
 cd larkdocs
-find -type f|\
+find . -type f|\
 	sed 's@\./@@g'|\
 	grep -v DEBIAN|\
 	xargs md5sum\
