@@ -57,7 +57,7 @@ find -type f|\
 	>DEBIAN/md5sums
 cd ..
 dpkg-deb -b raindrop .
-sudo apt install -y ./raindrop*.deb
+sudo apt install ./raindrop*.deb
 cp\
 	raindrop*.deb\
 	kubuntu-custom/assets/packages/

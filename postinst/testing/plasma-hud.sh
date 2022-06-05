@@ -26,7 +26,7 @@ find -type f|\
 	>DEBIAN/md5sums
 cd ..
 dpkg-deb -b plasma-hud .
-sudo apt install -y ./plasma-hud*.deb
+sudo apt install ./plasma-hud*.deb
 cp\
 	plasma-hud*.deb\
 	kubuntu-custom/assets/packages/

@@ -57,7 +57,7 @@ find -type f|\
 	>DEBIAN/md5sums
 cd ..
 dpkg-deb -b larkdocs .
-sudo apt install -y ./larkdocs*.deb
+sudo apt install ./larkdocs*.deb
 cp\
 	larkdocs*.deb\
 	kubuntu-custom/assets/packages/
