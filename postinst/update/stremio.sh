@@ -13,7 +13,7 @@ aria2c --console-log-level=error --summary-interval=0\
 	"$(wget -qO-\
 	https://www.stremio.com/downloads|\
 	grep amd64.deb|cut -d '"' -f222)"
-sudo apt install -y\
+sudo apt install\
 	--no-install-recommends\
 	./libfdk-aac1*.deb\
 	./stremio*.deb youtube-dl

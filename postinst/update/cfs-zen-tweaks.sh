@@ -6,5 +6,5 @@ aria2c --console-log-level=error --summary-interval=0\
     "$(wget -qO-\
     https://api.github.com/repos/igo95862/cfs-zen-tweaks/releases|\
 	grep browser_download_url|grep download|grep .deb|head -n1|cut -d '"' -f4)"
-sudo apt install -y ./cfs-zen-tweaks*.deb
+sudo apt install ./cfs-zen-tweaks*.deb
 rm -rf cfs-zen-tweaks*.deb
