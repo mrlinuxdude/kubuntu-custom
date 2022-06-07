@@ -12,6 +12,7 @@ apt install -y\
 	duf\
 	fd-find\
 	fzf\
+	gcp\
 	gdu\
 	hstr\
 	micro\

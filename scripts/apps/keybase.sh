@@ -9,6 +9,7 @@ apt install -y ./keybase*.deb
 #	gpg --dearmor -o\
 #	/etc/apt/trusted.gpg.d/keybase.gpg
 apt-key export 656D16C7|\
-	gpg --dearmor -o /etc/apt/trusted.gpg.d/keybase.gpg\
+	gpg --dearmor\
+	-o /etc/apt/trusted.gpg.d/keybase.gpg\
 	2>/dev/null
 apt update
