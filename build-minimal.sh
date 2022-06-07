@@ -29,3 +29,6 @@ bash -x kubuntu-custom/scripts/media/bomi.sh #PPA
 bash -x kubuntu-custom/scripts/media/freezer.sh #external-package
 bash -x kubuntu-custom/scripts/media/restricted-extras.sh #stock-apt
 bash -x kubuntu-custom/scripts/media/stremio.sh #external-package
+
+# cleanup
+bash -x kubuntu-custom/scripts/cleanup/cleanup.sh
