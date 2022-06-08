@@ -90,6 +90,9 @@ make\
 cat <<EOF |tee "$HOME"/.bashrc.d/blesh.bash>/dev/null
 source "\$HOME"/.local/share/blesh/ble.sh
 EOF
+cat <<EOF |tee "$HOME"/.blerc>/dev/null
+ble-face -s auto_complete fg=238,bg=000
+EOF
 rm -rf ble.sh*
 
 # Top programming fonts
