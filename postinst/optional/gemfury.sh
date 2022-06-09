@@ -2,12 +2,12 @@
 set -e
 # Fury CLI
 echo\
-    'deb [trusted=yes] https://cli.gemfury.com/apt/ /'|\
+    'deb [trusted=yes] https://apt.fury.io/cli/ * *'|\
     sudo tee\
     /etc/apt/sources.list.d/fury-cli.list\
     >/dev/null
 sudo nala update
-sudo nala install -y fury-cli #gemfury
+sudo nala install -y fury-cli
 echo\
     'export GEMFURY_PUSH_TOKEN='|\
     tee\
@@ -16,7 +16,7 @@ echo\
 
 # Raul Dipeas APT
 echo\
-    'deb [trusted=yes] https://rauldipeas.fury.site/apt/ /'|\
+    'deb [trusted=yes] https://rauldipeas.fury.site/apt/ * *'|\
     sudo tee\
     /etc/apt/sources.list.d/rauldipeas.list\
     >/dev/null
