@@ -19,3 +19,7 @@ bash <(wget -qO- https://git.disroot.org/rauldipeas/kubuntu-custom/raw/branch/ma
 ```bash
 bash <(wget -qO- https://git.disroot.org/rauldipeas/kubuntu-custom/raw/branch/main/testing.sh)
 ```
+## optional*
+```bash
+bash <(wget -qO- https://git.disroot.org/rauldipeas/kubuntu-custom/raw/branch/main/optional.sh)
+```
