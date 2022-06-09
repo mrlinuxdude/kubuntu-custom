@@ -27,11 +27,9 @@ bash -x kubuntu-custom/postinst/update/yabridge.sh #no-packaged
 # testing (update)
 mkdir -p kubuntu-custom/assets/packages
 bash -x kubuntu-custom/postinst/testing/fluent-reader.sh #external-package #makepkg #aur
-bash -x kubuntu-custom/postinst/testing/larkdocs.sh #external-package #makepkg #nativefier
 bash -x kubuntu-custom/postinst/testing/nerd-fonts-hack.sh #external-package #makepkg #aur
 bash -x kubuntu-custom/postinst/testing/plasma-hud.sh #external-package #makepkg #binary
 bash -x kubuntu-custom/postinst/testing/obs-multi-rtmp.sh #external-package #makepkg #aur
-bash -x kubuntu-custom/postinst/testing/raindrop.sh #external-package #makepkg #nativefier
 bash -x kubuntu-custom/postinst/testing/syncthingtray.sh #external-package #makepkg #binary
 
 rm -rf kubuntu-custom

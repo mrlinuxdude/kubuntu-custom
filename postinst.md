@@ -5,6 +5,7 @@
 ## Bismuth (10px gaps+atalhos+tamanho mínimo para geomeria das janelas)
 ## Menu de aplicativos (ícone start-here-kubuntu)
 ## Bloqueio de tela desativado
+## Aplicar tema do sistema no SDDM
 ## Não escurecer a tela
 ## Não desligar a tela
 ## Tocar para clicar*
