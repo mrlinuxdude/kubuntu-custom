@@ -6,6 +6,7 @@ git clone -q\
     https://git.disroot.org/rauldipeas/kubuntu-custom
 
 # optional
+bash -x kubuntu-custom/postinst/optional/blender.sh #PPA
 bash -x kubuntu-custom/postinst/optional/buildkite.sh #external-apt
 bash -x kubuntu-custom/postinst/optional/discord.sh #external-package
 bash -x kubuntu-custom/postinst/optional/firefox-vertical-tabs.sh

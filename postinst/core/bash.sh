@@ -92,6 +92,7 @@ source "\$HOME"/.local/share/blesh/ble.sh
 EOF
 cat <<EOF |tee "$HOME"/.blerc>/dev/null
 ble-face -s auto_complete fg=238,bg=000
+bleopt complete_auto_delay=300
 EOF
 rm -rf ble.sh*
 
