@@ -2,7 +2,7 @@
 set -e
 # Fury CLI
 echo\
-    'deb [trusted=yes] https://apt.fury.io/cli/ * *'|\
+    'deb [trusted=yes] https://cli.fury.site/apt/ * *'|\
     sudo tee\
     /etc/apt/sources.list.d/fury-cli.list\
     >/dev/null
