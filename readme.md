@@ -1,25 +1,25 @@
-# Kubuntu custom
+# [Kubuntu Custom](https://hackmd.io/@rauldipeas/kubuntu-custom)
 ## build
 ```bash
-bash <(wget -qO- https://git.disroot.org/rauldipeas/kubuntu-custom/raw/branch/main/build.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/kubuntu-custom/main/build.sh)
 ```
 ## build-minimal*
 ```bash
-bash <(wget -qO- https://git.disroot.org/rauldipeas/kubuntu-custom/raw/branch/main/build-minimal.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/kubuntu-custom/main/build-minimal.sh)
 ```
 ## postinst
 ```bash
-bash <(wget -qO- https://git.disroot.org/rauldipeas/kubuntu-custom/raw/branch/main/postinst.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/kubuntu-custom/main/postinst.sh)
 ```
 ## update
 ```bash
-bash <(wget -qO- https://git.disroot.org/rauldipeas/kubuntu-custom/raw/branch/main/update.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/kubuntu-custom/main/update.sh)
 ```
 ## testing*
 ```bash
-bash <(wget -qO- https://git.disroot.org/rauldipeas/kubuntu-custom/raw/branch/main/testing.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/kubuntu-custom/main/testing.sh)
 ```
 ## optional*
 ```bash
-bash <(wget -qO- https://git.disroot.org/rauldipeas/kubuntu-custom/raw/branch/main/optional.sh)
+bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/kubuntu-custom/main/optional.sh)
 ```

@@ -3,7 +3,7 @@ set -e
 
 rm -rf kubuntu-custom
 git clone -q\
-    https://git.disroot.org/rauldipeas/kubuntu-custom
+    https://github.com/rauldipeas/kubuntu-custom
 
 # core
 #bash -x kubuntu-custom/scripts/core/liquorix.sh #PPA
