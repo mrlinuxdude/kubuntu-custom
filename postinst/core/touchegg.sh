@@ -2,4 +2,4 @@
 set -e
 # Touchegg #TODO
 sudo add-apt-repository -y ppa:touchegg/stable #temp-gpg-error
-sudo apt install -y touchegg
+sudo apt install touchegg
