@@ -5,7 +5,7 @@ rm -rf obs-multi-rtmp
 git clone -q\
 	https://aur.archlinux.org/obs-multi-rtmp.git
 cd obs-multi-rtmp
-sudo nala install -y\
+sudo nala install\
 	cmake\
 	libobs-dev
 makedeb

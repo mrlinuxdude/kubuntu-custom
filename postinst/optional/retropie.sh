@@ -2,7 +2,7 @@
 set -e
 # RetroPie
 rm -rf RetroPie-Setup
-sudo nala install -y\
+sudo nala install\
 	dialog\
 	xmlstarlet
 git clone -q --depth=1\

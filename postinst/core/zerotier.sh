@@ -10,5 +10,5 @@ wget -qO-\
     gpg --dearmor -o\
     /etc/apt/trusted.gpg.d/zerotier.gpg\
     >/dev/null
-apt update
-apt install -y zerotier-one
+sudo apt update
+sudo nala install zerotier-one

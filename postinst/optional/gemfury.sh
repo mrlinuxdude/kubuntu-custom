@@ -7,7 +7,7 @@ echo\
     /etc/apt/sources.list.d/fury-cli.list\
     >/dev/null
 sudo nala update
-sudo nala install -y fury-cli
+sudo nala install fury-cli
 echo\
     'export GEMFURY_PUSH_TOKEN='|\
     tee\

@@ -7,7 +7,7 @@ sudo sed -i\
 	's/jammy/focal/g'\
 	/etc/apt/sources.list.d/*hardcode-tray*.list #tmp-downgrade-fix
 sudo add-apt-repository -y ppa:papirus/papirus-dev
-sudo nala install -y\
+sudo nala install\
 	hardcode-tray\
 	papirus-icon-theme
 sudo hardcode-tray --apply --theme Papirus-Dark

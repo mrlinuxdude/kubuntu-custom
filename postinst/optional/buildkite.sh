@@ -13,7 +13,7 @@ sudo apt-key --keyring\
     --recv-keys 32A37959C2FA5C3C99EFBC32A79206696452D198\
 	2>/dev/null
 sudo nala update
-sudo nala install -y buildkite-agent
+sudo nala install buildkite-agent
 cat <<EOF |tee "$HOME"/.bashrc.d/buildkite-tokens.bash>/dev/null
 export BUILDKITE_AGENT_TOKEN=
 export BUILDKITE_API_TOKEN=

@@ -12,7 +12,7 @@ if [[ -n $(lspci |grep NVIDIA|cut -d: -f3) ]];then
 	sed -i 's/modules/IGNORE_PREEMPT_RT_PRESENCE=1 modules/g' nvidia/usr/src/nvidia*/dkms.conf
 	sudo cp -rf nvidia/usr/src/nvidia* /usr/src/
 	rm -rf nvidia*
-	sudo nala install -y\
+	sudo nala install\
 	    "$(apt search nvidia-driver 2>/dev/null|grep nvidia-driver|grep -v server|cut -d '/' -f1|tail -n1)"
 cat <<EOF |sudo tee /usr/local/bin/prime-run>/dev/null
 #!/bin/sh
@@ -30,7 +30,7 @@ fi
 # TLP
 if [[ -n $(find /sys/class/power_supply|grep BAT) ]];then
 	echo 'Este computador dispõe de uma bateria'
-	sudo nala install -y tlp
+	sudo nala install tlp
 	sudo systemctl enable tlp.service
 	sudo tlp start
 else
@@ -40,7 +40,7 @@ fi
 # Touchpad
 if [[ $(sudo dmidecode --string chassis-type) == Notebook ]];then
 	echo 'Este computador é um notebook'
-	sudo nala install -y xserver-xorg-input-synaptics
+	sudo nala install xserver-xorg-input-synaptics
     bash -x kubuntu-custom/postinst/core/touche.sh #external-package
     bash -x kubuntu-custom/postinst/core/touchegg.sh #PPA
 else

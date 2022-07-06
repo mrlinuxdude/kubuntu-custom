@@ -16,7 +16,8 @@ aria2c --console-log-level=error --summary-interval=0\
 sudo apt install\
 	--no-install-recommends\
 	./libfdk-aac1*.deb\
-	./stremio*.deb youtube-dl
+	./stremio*.deb\
+	youtube-dl
 rm -rf\
 	libfdk-aac1*.deb\
 	stremio*.deb

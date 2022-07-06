@@ -12,7 +12,7 @@ echo\
 	/etc/apt/sources.list.d/anydesk-stable.list\
 	>/dev/null
 sudo nala update
-sudo nala install -y anydesk
+sudo nala install anydesk
 sudo systemctl stop anydesk
 sudo systemctl disable anydesk
 rm -rf /usr/lib/x86_64-linux-gnu/libpangox-1.0.so.0

@@ -1,5 +1,5 @@
 #!/bin/bash
 set -e
 # Surge
-sudo nala install -y npm
+sudo nala install npm
 sudo npm install -g surge

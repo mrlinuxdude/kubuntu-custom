@@ -2,7 +2,7 @@
 set -e
 # rtcqs
 sudo rm -rf /opt/rtcqs*
-sudo nala install -y python3-tk
+sudo nala install python3-tk
 pip install -q rtcqs
 mkdir -p "$HOME"/.local/share/{applications,icons}
 wget -qO\
