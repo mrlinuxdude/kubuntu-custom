@@ -39,7 +39,6 @@ bash -x kubuntu-custom/postinst/testing/syncthingtray.sh #external-package #make
 # core
 bash -x kubuntu-custom/postinst/core/bash.sh #no-packaged #pip
 bash -x kubuntu-custom/postinst/core/drivers.sh #stock-apt
-bash -x kubuntu-custom/postinst/core/gemfury.sh #external-apt
 bash -x kubuntu-custom/postinst/core/git-settings.sh
 bash -x kubuntu-custom/postinst/core/papirus.sh #PPA
 bash -x kubuntu-custom/postinst/core/rtcqs.sh #no-packaged #pip
