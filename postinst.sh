@@ -5,6 +5,9 @@ rm -rf kubuntu-custom
 git clone -q\
     https://github.com/rauldipeas/kubuntu-custom
 
+sudo add-apt-repository -n multiverse
+sudo add-apt-repository universe
+
 # update
 bash -x kubuntu-custom/postinst/update/bitwarden.sh #external-package
 bash -x kubuntu-custom/postinst/update/bluemail.sh #external-package
