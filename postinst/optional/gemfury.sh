@@ -13,10 +13,3 @@ echo\
     tee\
     "$HOME"/.bashrc.d/gemfury-push-token.bash\
     >/dev/null
-
-# Raul Dipeas APT
-echo\
-    'deb [trusted=yes] https://rauldipeas.fury.site/apt/ * *'|\
-    sudo tee\
-    /etc/apt/sources.list.d/rauldipeas.list\
-    >/dev/null

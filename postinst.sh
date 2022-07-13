@@ -35,11 +35,13 @@ bash -x kubuntu-custom/postinst/testing/nerd-fonts-hack.sh #external-package #ma
 bash -x kubuntu-custom/postinst/testing/obs-multi-rtmp.sh #external-package #makepkg #aur
 bash -x kubuntu-custom/postinst/testing/plasma-hud.sh #external-package #makepkg #binary
 bash -x kubuntu-custom/postinst/testing/syncthingtray.sh #external-package #makepkg #binary
+bash -x kubuntu-custom/postinst/testing/transfuse.sh #no-package #binary
 
 # core
+bash -x kubuntu-custom/postinst/core/apt-repository.sh #no-packaged
 bash -x kubuntu-custom/postinst/core/bash.sh #no-packaged #pip
 bash -x kubuntu-custom/postinst/core/drivers.sh #stock-apt
-bash -x kubuntu-custom/postinst/core/git-settings.sh
+bash -x kubuntu-custom/postinst/core/git-settings.sh #no-packaged
 bash -x kubuntu-custom/postinst/core/papirus.sh #PPA
 bash -x kubuntu-custom/postinst/core/rtcqs.sh #no-packaged #pip
 bash -x kubuntu-custom/postinst/core/vnc.sh #stock-apt
