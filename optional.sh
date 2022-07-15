@@ -17,6 +17,7 @@ bash -x kubuntu-custom/postinst/optional/gemfury.sh #external-apt
 bash -x kubuntu-custom/postinst/optional/gitqlient.sh #external-package
 bash -x kubuntu-custom/postinst/optional/heroic.sh #external-package
 bash -x kubuntu-custom/postinst/optional/internxt.sh #external-package
+bash -x kubuntu-custom/postinst/testing/transfuse.sh #no-packaged #pip
 bash -x kubuntu-custom/postinst/optional/lunacy.sh #external-package
 bash -x kubuntu-custom/postinst/optional/morgen.sh #external-package
 bash -x kubuntu-custom/postinst/optional/nvm.sh #no-packaged
@@ -25,4 +26,5 @@ bash -x kubuntu-custom/postinst/optional/rmtrash.sh #external-package
 bash -x kubuntu-custom/postinst/optional/surge.sh #npm
 bash -x kubuntu-custom/postinst/optional/telegram.sh #no-packaged
 bash -x kubuntu-custom/postinst/optional/tonelib.sh #external-package
+bash -x kubuntu-custom/postinst/testing/transfuse.sh #no-package #binary
 bash -x kubuntu-custom/postinst/optional/wrangler.sh #npm

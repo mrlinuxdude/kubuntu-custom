@@ -35,7 +35,6 @@ bash -x kubuntu-custom/postinst/testing/nerd-fonts-hack.sh #external-package #ma
 bash -x kubuntu-custom/postinst/testing/obs-multi-rtmp.sh #external-package #makepkg #aur
 bash -x kubuntu-custom/postinst/testing/plasma-hud.sh #external-package #makepkg #binary
 bash -x kubuntu-custom/postinst/testing/syncthingtray.sh #external-package #makepkg #binary
-bash -x kubuntu-custom/postinst/testing/transfuse.sh #no-package #binary
 
 # core
 bash -x kubuntu-custom/postinst/core/apt-repository.sh #no-packaged
