@@ -18,6 +18,7 @@ bash -x kubuntu-custom/postinst/optional/gitqlient.sh #external-package
 bash -x kubuntu-custom/postinst/optional/heroic.sh #external-package
 bash -x kubuntu-custom/postinst/optional/internxt.sh #external-package
 bash -x kubuntu-custom/postinst/optional/lunacy.sh #external-package
+bash -x kubuntu-custom/postinst/optional/morgen.sh #external-package
 bash -x kubuntu-custom/postinst/optional/nvm.sh #no-packaged
 bash -x kubuntu-custom/postinst/optional/retropie.sh #no-packaged
 bash -x kubuntu-custom/postinst/optional/rmtrash.sh #external-package
