@@ -9,6 +9,7 @@ git clone -q\
 bash -x kubuntu-custom/postinst/optional/anydesk.sh #extenal-apt
 bash -x kubuntu-custom/postinst/optional/apprepo.sh #appimage
 bash -x kubuntu-custom/postinst/optional/blender.sh #no-packaged
+bash -x kubuntu-custom/postinst/optional/clockify.sh #external-packaged
 bash -x kubuntu-custom/postinst/optional/buildkite.sh #external-apt
 bash -x kubuntu-custom/postinst/optional/discord.sh #external-package
 bash -x kubuntu-custom/postinst/optional/emoji.sh #stock-apt
