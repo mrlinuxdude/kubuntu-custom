@@ -10,5 +10,5 @@ aria2c --console-log-level=error --summary-interval=0\
 	https://tonelib.net/download/ToneLib-Zoom-amd64.deb
 aria2c --console-log-level=error --summary-interval=0\
 	https://plugins4free.com/get_plug/ToneLib-GFX-amd64.deb
-sudo apt install ./ToneLibe*.deb
+sudo nala install ./ToneLibe*.deb
 rm -rf ToneLib*.deb

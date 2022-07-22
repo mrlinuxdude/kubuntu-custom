@@ -9,7 +9,7 @@ sudo nala install\
 	cmake\
 	libobs-dev
 makedeb
-sudo apt install ./obs-multi-rtmp*.deb
+sudo nala install ./obs-multi-rtmp*.deb
 sudo mv\
     /usr/lib/obs-plugins/obs-multi-rtmp.so\
     /usr/lib/x86_64-linux-gnu/obs-plugins/

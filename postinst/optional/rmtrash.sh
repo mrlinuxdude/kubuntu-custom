@@ -6,7 +6,7 @@ git clone -q\
     https://aur.archlinux.org/rmtrash.git
 cd rmtrash
 makedeb -s
-sudo apt install ./rmtrash*.deb
+sudo nala install ./rmtrash*.deb
 cd ..
 cp\
     rmtrash/rmtrash*.deb\

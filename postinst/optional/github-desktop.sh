@@ -6,5 +6,5 @@ aria2c --console-log-level=error --summary-interval=0\
 	"$(wget -qO-\
 	https://api.github.com/repos/shiftkey/desktop/releases|\
 	grep browser_download_url|grep .deb|head -n1|cut -d '"' -f4)"
-sudo apt install ./GitHubDesktop*.deb
+sudo nala install ./GitHubDesktop*.deb
 rm -rf GitHubDesktop*.deb

@@ -9,7 +9,7 @@ sed -i\
     's/depends=("gtk3" "nss")//g'\
     PKGBUILD
 makedeb -d #-H 'Section: network'
-sudo apt install ./fluent-reader*.deb
+sudo nala install ./fluent-reader*.deb
 cd ..
 cp\
     fluent-reader-bin/fluent-reader*.deb\
