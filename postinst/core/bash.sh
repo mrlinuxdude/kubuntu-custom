@@ -15,6 +15,7 @@ EOF
 mkdir -p "$HOME"/.bashrc.d/themes
 
 # ntfy
+sudo nala install libnotify-bin
 pip install -q ntfy
 cat <<EOF |tee "$HOME"/.bashrc.d/ntfy.bash>/dev/null
 PATH="\$PATH":"\$HOME"/.local/bin
