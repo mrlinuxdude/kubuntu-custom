@@ -12,7 +12,6 @@ else
 	echo 'Sua GPU não é AMD'
 fi
 
-
 # NVIDIA
 if [[ -n $(lspci |grep NVIDIA|cut -d: -f3) ]];then
 	echo 'Sua GPU é NVIDIA'
