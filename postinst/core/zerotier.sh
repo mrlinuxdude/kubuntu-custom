@@ -2,7 +2,7 @@
 set -e
 # ZeroTier
 echo\
-    'deb http://download.zerotier.com/debian/buster buster main'|\
+    'deb http://download.zerotier.com/debian/jammy jammy main'|\
     sudo tee\
     /etc/apt/sources.list.d/zerotier.list
 wget -qO-\

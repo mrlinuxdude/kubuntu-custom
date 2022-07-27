@@ -6,6 +6,7 @@ sudo add-apt-repository -ny ppa:papirus/hardcode-tray
 sudo sed -i\
 	's/jammy/focal/g'\
 	/etc/apt/sources.list.d/*hardcode-tray*.list #tmp-downgrade-fix
+sudo rm -rf	/etc/apt/sources.list.d/*papirus*
 sudo add-apt-repository -y ppa:papirus/papirus-dev
 sudo nala install\
 	hardcode-tray\
