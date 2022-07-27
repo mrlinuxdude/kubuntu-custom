@@ -18,6 +18,7 @@ bash -x kubuntu-custom/postinst/optional/gemfury.sh #external-apt
 bash -x kubuntu-custom/postinst/optional/gitqlient.sh #external-package
 bash -x kubuntu-custom/postinst/optional/heroic.sh #external-package
 bash -x kubuntu-custom/postinst/optional/internxt.sh #external-package
+bash -x kubuntu-custom/postinst/optional/joplin.sh #external-package
 bash -x kubuntu-custom/postinst/testing/transfuse.sh #no-packaged #pip
 bash -x kubuntu-custom/postinst/optional/lunacy.sh #external-package
 bash -x kubuntu-custom/postinst/optional/morgen.sh #external-package
