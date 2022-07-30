@@ -13,3 +13,6 @@ echo\
     >/dev/null
 sudo nala update
 sudo nala install element-desktop
+sudo hardcode-tray --apply --theme Papirus-Dark
+#cd /opt/Element/resources/img
+#sudo ffmpeg -i element.png element.ico
