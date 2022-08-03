@@ -23,8 +23,9 @@ cp -rf\
     $HOME/.local/share/blender/blender.desktop\
     $HOME/.local/share/applications/
 sed -i\
-    "s@Exec=blender@Exec=sh -c \"audacity\&sleep 1\;$HOME/.local/share/blender/blender\;killall -9 audacity\"@g"\
+    "s@Exec=blender@Exec=sh -c \"audacity\&sleep 3\;$HOME/.local/share/blender/blender\;killall -9 audacity\"@g"\
     $HOME/.local/share/applications/blender.desktop
 aria2c --console-log-level=error --summary-interval=0\
     https://github.com/tin2tin/audacity_tools_for_blender/archive/main.zip
 unzip audacity_tools_for_blender-main.zip -d "$HOME"/.config/blender/"$(ls ~/.config/blender/)"/scripts/addons/
+rm -rf audacity_tools_for_blender-main.zip
