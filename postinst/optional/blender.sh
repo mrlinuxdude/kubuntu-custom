@@ -27,5 +27,6 @@ sed -i\
     $HOME/.local/share/applications/blender.desktop
 aria2c --console-log-level=error --summary-interval=0\
     https://github.com/tin2tin/audacity_tools_for_blender/archive/main.zip
-unzip audacity_tools_for_blender-main.zip -d "$HOME"/.config/blender/"$(ls ~/.config/blender/)"/scripts/addons/
+mkdir -pv "$HOME"/.config/blender/"$(find ~/.local/share/blender/* -type d|head -n1|sed "s@$HOME/.local/share/blender/@@g")"/scripts/addons/
+unzip audacity_tools_for_blender-main.zip -d "$HOME"/.config/blender/"$(find ~/.local/share/blender/* -type d|head -n1|sed "s@$HOME/.local/share/blender/@@g")"/scripts/addons/
 rm -rf audacity_tools_for_blender-main.zip
