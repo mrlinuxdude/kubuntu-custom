@@ -6,7 +6,7 @@ set -e
 if [[ -n $(lspci |grep AMD|grep Radeon|cut -d: -f3) ]];then
 	echo 'Sua GPU é AMD'
 	lspci |grep AMD|grep Radeon|cut -d: -f3
-	cat /etc/environment|grep -v 'RADV_PERFTEST=aco'|sudo tee /etc/environment>/dev/null
+	grep -v 'RADV_PERFTEST=aco' /etc/environment|sudo tee /etc/environment>/dev/null
 	echo 'RADV_PERFTEST=aco'|sudo tee -a /etc/environment>/dev/null
 else
 	echo 'Sua GPU não é AMD'
