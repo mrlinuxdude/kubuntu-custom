@@ -13,6 +13,22 @@ echo\
     >/dev/null
 sudo nala update
 sudo nala install element-desktop
-sudo hardcode-tray --apply --theme Papirus-Dark
-#cd /opt/Element/resources/img
-#sudo ffmpeg -i element.png element.ico
+#sudo hardcode-tray --apply --theme Papirus-Dark #temp-fix
+npx asar e\
+    /opt/Element/resources/webapp.asar\
+    element-asar
+rsvg-convert -f png\
+    /usr/share/icons/Papirus/24x24/panel/element-desktop-tray.svg\
+    -o element-asar/vector-icons/favicon.*.ico
+npx asar p\
+    element-asar\
+    webapp.asar
+sudo cp -rf\
+    webapp.asar\
+    /opt/Element/resources/
+sudo rsvg-convert -f png -h 256 -w 256\
+    /usr/share/icons/Papirus/24x24/panel/element-desktop-tray.svg\
+    -o /opt/Element/resources/img/element.png
+rm -rf\
+    element-asar\
+    webapp.asar
