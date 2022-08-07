@@ -11,14 +11,6 @@ bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/kubuntu-custom/mai
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/kubuntu-custom/main/postinst.sh)
 ```
-## update
-```bash
-bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/kubuntu-custom/main/update.sh)
-```
-## testing*
-```bash
-bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/kubuntu-custom/main/testing.sh)
-```
 ## optional*
 ```bash
 bash <(wget -qO- https://raw.githubusercontent.com/rauldipeas/kubuntu-custom/main/optional.sh)
